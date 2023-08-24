@@ -1,5 +1,10 @@
 body {
-    background: #000128;
+    background: #331c2f;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -51,7 +56,7 @@ h2 {
 }
 
 button {
-    background: #885DF1;
+    background: rgb(64, 35, 47, 0.7);
     border-radius: 100px;
     color: white;
     font-family: 'Roboto', serif;
