@@ -18,6 +18,8 @@ body {
 section {
     margin: 0 auto;
     max-width: 1200px;
+    padding-left: 171px;
+    padding-right: 171px;
 }
 
 .grid {
@@ -164,8 +166,11 @@ footer a {
     header button {
         font-size: 12px;
         padding: 8px 24px 8px 24px;
-        
-    
+           
+    }
+
+    section {
+        padding: 50px 50px;
     }
 }
 
