@@ -234,6 +234,10 @@ footer a {
         padding: 50px 50px;
     }
 
+    footer p {
+        font-size: 14px;
+    }
+
 
 }
 
@@ -257,7 +261,7 @@ footer a {
     }
 
     .grid {
-        grid-gap: 32px;
+        grid-gap: 15px;
         grid-template-columns: 1fr;
     }
 
