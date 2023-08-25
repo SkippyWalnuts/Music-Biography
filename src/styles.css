@@ -11,20 +11,27 @@ body {
 }
 
 .container {
-    max-width: 100%;
     margin: 0 auto;
+    max-width: 100%;
 }
 
 section {
     margin: 0 auto;
-    max-width: 1200px;
-    padding-left: 171px;
-    padding-right: 171px;
+  
+   
 }
 
 .grid {
     display: grid;
-    grid-gap: 64px;
+    grid-gap: 50px;
+   
+}
+
+.grid-2-columns {
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns {
     grid-template-columns: 1fr 2fr 2fr;
 }
 
@@ -58,7 +65,7 @@ header h3 {
     font-family: var(--main-font);
     font-size: 25px;
     font-weight: 800px;
-    line-height: 30px;
+    line-height: 2;
     letter-spacing: 6px; 
     margin-bottom: 6px;
       
@@ -68,26 +75,74 @@ header h2 {
     font-family: var(--main-font);
     font-size: 40px;
     font-weight: 400;
-    line-height: 47px;
+    line-height: 2;
     letter-spacing: 0em;
     margin-top: 8px;
     margin-bottom: 40px;
 
 }
 
-header button {
-    background: rgb(64, 35, 47, 0.7);
+button {
+    background: #21142d;
     border-radius: 100px;
     color: white;
     font-family: var(--main-font);
     font-size: 17px;
     font-weight: 500;
     letter-spacing: 0px;
-    line-height: 20px;
+    line-height: 1.5;
+    margin: 0 auto;
     padding: 16px 32px 16px 32px;
     text-align: center;
+}
+
+main {
+    background-color: white;
+    
+}
+
+main img {
+   max-width: 100%;
+   }
+
+.main-img {
+    line-height: 0;
+   }
+
+
+main h3 {
+    color: rgb(64, 35, 47);
+    font-family: var(--secondary-heading-font);
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 5px;
+    margin: 50px auto 5px;
 
 }
+
+main h2 {
+    color: #272044;
+    font-family: var(--primary-heading-font);
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 0em;
+    margin: 0 auto;
+    
+}
+
+main p {
+    color: rgb(39, 32, 68, 0.7);
+    font-family: var(--main-font);
+    font-size: 14px;
+    font-weight: 400;
+    margin: 18px auto;
+    }
+
+    .main-text {
+      padding-right: 30px;
+    }
+
+
 
 footer {
     background-image: linear-gradient(rgba(2, 4, 3, 0.8), rgba(2, 4, 3, 0.8)), url("../src/images/wedding-singer-bouqet.jpg");
@@ -95,16 +150,16 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
-    padding: 100px 0;
+    padding: 100px 100px;
+    
   }
 
 footer h3 {
     font-family: var(--primary-heading-font);
     font-size: 24px;
     font-weight: 700;
-    line-height: 32px;
+    line-height: 1.5;
     letter-spacing: 0em;
-    text-align: left;
 }  
 
 footer p {
@@ -112,10 +167,8 @@ footer p {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    letter-spacing: 0px;
     opacity: 0.9;
-    text-align: left;
-
+    
 }
 
 footer ul {
@@ -124,9 +177,7 @@ footer ul {
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0px;
-    padding: 0;
-    text-align: left;
-    
+    padding: 0;   
 }
 
 footer li {
@@ -163,15 +214,27 @@ footer a {
         margin-bottom: 15px;
     }
 
-    header button {
+    button {
         font-size: 12px;
         padding: 8px 24px 8px 24px;
-           
     }
 
-    section {
+    
+
+    main h3 {
+        font-size: 10px;
+        margin: 30px auto 0;
+    }
+
+    main h2 {
+        font-size: 30px;
+    }
+
+    footer {
         padding: 50px 50px;
     }
+
+
 }
 
 @media (max-width: 620px) {
@@ -192,4 +255,30 @@ footer a {
     header h2 {
         font-size: 20px;
     }
+
+    .grid {
+        grid-gap: 32px;
+        grid-template-columns: 1fr;
+    }
+
+    main img {
+        display: none;
+    }
+
+    .main-text {
+        padding: 10px 30px 30px 30px;
+    }
+
+    main h3 {
+        margin: 0 auto;
+    }
+
+    main h2 {
+        margin: 5px auto;
+    }
+
+    main button {
+        margin: 10px auto;
+    }
+
 }
