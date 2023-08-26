@@ -15,24 +15,10 @@ body {
     max-width: 100%;
 }
 
-section {
+ul {
+    list-style: none;
     margin: 0 auto;
-  
-   
-}
-
-.grid {
-    display: grid;
-    grid-gap: 50px;
-   
-}
-
-.grid-2-columns {
-    grid-template-columns: 1fr 1fr;
-}
-
-.grid-3-columns {
-    grid-template-columns: 1fr 2fr 2fr;
+    padding: 0;
 }
 
 header {
@@ -96,12 +82,57 @@ button {
     text-align: center;
 }
 
-main {
+.grid {
+    display: grid;
+    grid-gap: 50px;
+   
+}
+
+.grid-2-col {
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-col {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-3-col-1-narrow {
+    grid-template-columns: 1fr 2fr 2fr;
+}
+
+section {
+    margin: 0 auto;
+}
+
+section h3 {
+    font-family: var(--secondary-heading-font);
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 5px;
+    margin: 50px auto 5px;
+}
+
+section h2 {
+    font-family: var(--primary-heading-font);
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 0em;
+    margin: 0 auto;  
+}
+
+section p {
+    font-family: var(--main-font);
+    font-size: 14px;
+    font-weight: 400;
+    margin: 18px auto;
+}
+
+section.primary {
     background-color: white;
     
 }
 
-main img {
+section.primary img {
    max-width: 100%;
    }
 
@@ -109,40 +140,63 @@ main img {
     line-height: 0;
    }
 
-
-main h3 {
+section.primary h3 {
     color: rgb(64, 35, 47);
-    font-family: var(--secondary-heading-font);
-    font-size: 13px;
-    font-weight: 800;
-    letter-spacing: 5px;
-    margin: 50px auto 5px;
-
 }
 
-main h2 {
+section.primary h2 {
     color: #272044;
-    font-family: var(--primary-heading-font);
-    font-size: 40px;
-    font-weight: 700;
-    letter-spacing: 0em;
-    margin: 0 auto;
-    
 }
 
-main p {
+section.primary p {
     color: rgb(39, 32, 68, 0.7);
+}
+
+.main-text {
+    padding-right: 30px;
+}
+
+section.secondary {
+    background-image: linear-gradient(360deg, rgba(3, 5, 4, 0.9) 0%, rgba(2, 4, 3, 0.7) 51.55%, rgba(11, 6, 32, 0.6) 100%), 
+    url("/src/images/guys-and-dolls.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section.secondary h2, section.secondary h3 {
+    color: white;
+    text-align: center;
+}
+
+.card {
+    background-color: white;
     font-family: var(--main-font);
-    font-size: 14px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.card h4 {
+    color: rgba(39, 32, 68, 1);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 24px auto 8px 32px;
+}
+
+.card p {
+    font-size: 16px;
     font-weight: 400;
-    margin: 18px auto;
-    }
+    line-height: 1.5;
+    margin: 0 auto 24px 32px;
+}
 
-    .main-text {
-      padding-right: 30px;
-    }
+.card h5 {
+font-size: 16px;
+font-weight: 700;
+margin: 0 auto;
 
-
+}
 
 footer {
     background-image: linear-gradient(rgba(2, 4, 3, 0.8), rgba(2, 4, 3, 0.8)), url("../src/images/wedding-singer-bouqet.jpg");
@@ -151,8 +205,7 @@ footer {
     background-size: cover;
     color: white;
     padding: 100px 100px;
-    
-  }
+}
 
 footer h3 {
     font-family: var(--primary-heading-font);
