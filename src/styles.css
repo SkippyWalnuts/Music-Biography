@@ -166,7 +166,8 @@ main .primary p {
 }
 
 .main-text {
-    padding-right: 30px;
+    padding-left: 30px;
+    padding-right: 45px;
 }
 
 main .secondary {
@@ -196,7 +197,7 @@ main .btn {
 }
 
 .cards {
-    margin: 0 170px 100px;
+    margin: 0 100px;
 }
 
 .card {
@@ -207,7 +208,7 @@ main .btn {
     text-align: left;
 }
 
-.card img {
+.card-header img {
     border-radius: 15px 15px 0 0;
     max-width: 100%;
 }
@@ -216,19 +217,15 @@ main .btn {
     padding: 24px 32px;
 }
 
-.card p {
+.card p, .card ul {
     font-size: 16px;
     font-weight: 400;
     margin: 0 auto;
 }
 
-.card ul {
-    margin: 0 auto 8px;
-}
-
 .card .btn {
     display: block;
-    margin: 0 auto;
+    margin: 8px auto;
 }
 
 footer {
@@ -282,44 +279,59 @@ footer a {
 
 @media (max-width: 960px) {
     header {
+        padding-bottom: 300px;
         padding-top: 175px;
     }
 
-    h3 {
-        font-size: 15px;
+    header h3, main h3, .card h3 {
+        font-size: 12px;
         
     }
 
-    h1 {
+    header h1 {
         font-size: 85px;
         line-height: 110px;
     }
 
-    h2 {
+    header h2, main h2, .card h2 {
         font-size: 25px;
         margin-bottom: 15px;
     }
 
-    p {
-        font-size: 14px;
+    .main-text {
+        padding-left: 0;
+        padding-right: 10px;
+    }
+
+    main p, .card p, .card ul, footer p, footer ul {
+        font-size: 12px;
     }
 
     .btn {
         font-size: 12px;
         padding: 8px 24px 8px 24px;
     }
+    
 
     .cards {
         margin: 0 50px 80px;
     }
 
-    main .primary h3 {
+    .card-text {
+    padding: 20px;
+    }   
+    
+    main h3 {
         margin: 30px auto 0;
     }
 
     footer {
         padding: 50px 50px;
-    }  
+    }
+    
+    .card h4, footer h3 {
+        font-size: 18px;
+    }
 
 
 }
@@ -329,17 +341,17 @@ footer a {
         min-width: 480px;
     }
 
-    h3 {
+    header h3, main h3 {
         font-size: 10px;
         
     }
 
-    h1 {
+    header h1 {
         font-size: 65px;
         line-height: 80px;
     }
 
-    h2 {
+    header h2 {
         font-size: 20px;
     }
 
@@ -348,27 +360,25 @@ footer a {
         grid-template-columns: 1fr;
     }
 
-    main .primary img, .secondary img {
+    main img {
         display: none;
     }
 
     .main-text {
-        padding: 10px 30px 30px 30px;
+        padding: 0 30px 30px;
     }
 
     .cards {
         margin: 0 10px 20px;
     }
 
-    main h3 {
+    main .primary h3 {
         margin: 0 auto;
     }
 
-    main h2 {
+    main .primary h2 {
         margin: 5px auto;
-    }
-
-    
+    } 
 
     main .secondary h2 {
         margin: 7px auto 35px;
