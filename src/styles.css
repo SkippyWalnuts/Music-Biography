@@ -201,8 +201,14 @@ main p {
 .card-header img {
     border-radius: 15px 15px 0 0;
     display: block;
+    transition: all ease-in-out 150ms;
     width: 100%;
 }
+
+.card-header img:hover {
+    cursor: crosshair;
+    filter:  sepia(50%);
+    }
 
 .card-header .grease-img {
     border-radius: 0;
