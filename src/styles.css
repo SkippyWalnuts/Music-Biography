@@ -6,13 +6,13 @@
 }
 
 body {
-    background: #030505;
-    margin: 0 auto;
+    background: #03050a;
+    
 }
 
 .container {
     margin: 0 auto;
-    width: 100%;
+    max-width: 1200px;
 }
 
 ul {
@@ -83,7 +83,7 @@ header h2 {
 
 .grid {
     display: grid;
-    grid-gap: 15px;
+    grid-gap: 30px;
    
 }
 
@@ -139,28 +139,28 @@ main p {
     margin: 18px auto;
 }
 
-main .primary {
+.primary {
     background-color: white;
 }
 
-main .primary img {
+.primary img {
    max-width: 100%;
    }
 
 .main-img {
     line-height: 0;
-   }
+}
 
-main .primary h3 {
+.primary h3 {
     color: rgb(64, 35, 47);
     margin: 50px auto 5px;
 }
 
-main .primary h2 {
+.primary h2 {
     color: #272044;
 }
 
-main .primary p {
+.primary p {
     color: rgb(39, 32, 68, 0.7);
 }
 
@@ -169,27 +169,28 @@ main .primary p {
     padding-right: 45px;
 }
 
-main .secondary h2 {
+.secondary {
+    background-image: linear-gradient(360deg, rgba(3, 5, 4, 1) 0%, rgba(2, 4, 3, 0.3) 51.55%, rgba(11, 6, 32, 0) 100%), url("/src/images/microphone.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 50px;
+}
+
+.secondary h2, .gallery h2 {
     margin: 7px auto 50px;
 }
 
-main .secondary h3 {
-    margin: 100px auto 0;
-}
-
-main .secondary h2, main .secondary h3 {
+.secondary h2, .secondary h3 {
     color: white;
     text-align: center;
 }
 
-main .btn {
+.btn {
     font-size: 12px;
     padding: 8px 24px 8px 24px;
 }
 
-.cards {
-    margin: 0 100px;
-}
 
 .card {
     background: white;
@@ -222,15 +223,14 @@ main .btn {
     margin: 10px auto 0;
 }
 
-.embed-grid {
-    color: white;
-    margin: 0 50px;
+.gallery {
+    background: white;
+    padding: 100px 50px;
     text-align: center;
 }
 
 .embed {
-    aspect-ratio: 1 / 1; 
-    border-radius: 15px;
+    aspect-ratio: 2 / 5; 
     width: 100%;
 }
 
@@ -302,11 +302,7 @@ footer a {
         font-size: 25px;
         margin-bottom: 15px;
     }
-
-    main .secondary h3 {
-        margin: 50px auto 0;
-    }
-    
+ 
 
     .main-text {
         padding-left: 0;
@@ -322,11 +318,11 @@ footer a {
         padding: 8px 24px 8px 24px;
     }
     
-
-    .cards {
-        margin: 0 50px 80px;
+    .secondary, .gallery {
+        padding: 50px;
     }
 
+    
     .card-text {
     padding: 20px;
     }   
@@ -343,9 +339,7 @@ footer a {
         font-size: 18px;
     }
 
-    .embed {
-        aspect-ratio: 16 / 9; 
-    }
+   
 
 
 }
@@ -382,6 +376,22 @@ footer a {
         padding: 0 30px 30px;
     }
 
+
+    .primary h3 {
+        margin: 0 auto;
+    }
+
+    .primary h2 {
+        margin: 5px auto;
+    } 
+
+    .secondary, .gallery {
+        padding: 25px;
+    }
+    .secondary h2, .gallery h2 {
+        margin: 7px auto 35px;
+    }
+      
     .cards {
         margin: 0 10px 20px;
     }
@@ -389,24 +399,9 @@ footer a {
     .card-header img {
         border-radius: 15px 15px 0 0;
         display: none;
-       
     }
 
-    main .primary h3 {
-        margin: 0 auto;
-    }
-
-    main .primary h2 {
-        margin: 5px auto;
-    } 
-
-    main .secondary h2 {
-        margin: 7px auto 35px;
-    }
-
-   main .secondary h3 {
-        font-size: 10px;
-        margin: 35px auto 0;
-
+    .embed {
+        aspect-ratio: 16 / 9; 
     }
 }
