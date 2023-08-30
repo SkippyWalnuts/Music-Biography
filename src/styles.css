@@ -141,7 +141,6 @@ main p {
 
 main .primary {
     background-color: white;
-    
 }
 
 main .primary img {
@@ -170,14 +169,6 @@ main .primary p {
     padding-right: 45px;
 }
 
-main .secondary {
-    background-image: linear-gradient(360deg, rgba(3, 5, 4, 0.9) 0%, rgba(2, 4, 3, 0.7) 51.55%, rgba(11, 6, 32, 0.6) 100%), 
-    url("/src/images/guys-and-dolls.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 main .secondary h2 {
     margin: 7px auto 50px;
 }
@@ -203,13 +194,17 @@ main .btn {
 .card {
     background: white;
     border-radius: 15px;
-    font-family: var(--main-font);
-    
+    font-family: var(--main-font); 
 }
 
 .card-header img {
+    border-radius: 15px 15px 0 0;
     display: block;
-    max-width: 100%;
+    width: 100%;
+}
+
+.card-header .grease-img {
+    border-radius: 0;
 }
 
 .card-text {
@@ -224,7 +219,7 @@ main .btn {
 
 .card .btn {
     display: block;
-    margin: 8px auto;
+    margin: 10px auto 0;
 }
 
 footer {
@@ -284,7 +279,6 @@ footer a {
 
     header h3, main h3, .card h3 {
         font-size: 12px;
-        
     }
 
     header h1 {
@@ -296,6 +290,11 @@ footer a {
         font-size: 25px;
         margin-bottom: 15px;
     }
+
+    main .secondary h3 {
+        margin: 50px auto 0;
+    }
+    
 
     .main-text {
         padding-left: 0;
@@ -369,6 +368,12 @@ footer a {
 
     .cards {
         margin: 0 10px 20px;
+    }
+
+    .card-header img {
+        border-radius: 15px 15px 0 0;
+        display: none;
+       
     }
 
     main .primary h3 {
