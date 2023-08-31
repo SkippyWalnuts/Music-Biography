@@ -7,13 +7,13 @@
 
 body {
     background: #03050a;
-    
+    min-width: 350px;
 }
 
 .container {
     margin: 0 auto;
     max-width: 1200px;
-    min-width: 350px;
+    
 }
 
 ul {
