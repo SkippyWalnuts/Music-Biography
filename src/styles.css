@@ -352,9 +352,7 @@ footer a {
 }
 
 @media (max-width: 620px) {
-    body {
-        min-width: 480px;
-    }
+   
 
     header h3, main h3 {
         font-size: 10px;
